@@ -1057,4 +1057,29 @@ ul.nav_vertical li {
 .offset-by-ten.column,
 .offset-by-ten.columns {
   margin-left: 100%;
+}
+
+.btn-color1 {
+  background-color: lightcoral;
+  border: 1px solid black;
+}
+
+.btn-color2 {
+  background-color: lightblue;
+  border: 1px solid black;
+}
+
+.btn-color3 {
+  background-color: lightyellow;
+  border: 1px solid black;
+}
+
+.btn-color4 {
+  background-color: lightpink;
+  border: 1px solid black;
+}
+
+.btn-color5 {
+  background-color: lightgreen;
+  border: 1px solid black;
 }/*# sourceMappingURL=mis_estilos.css.map */

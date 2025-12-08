@@ -1,10 +1,10 @@
 @charset "UTF-8";
 a {
-  color: --var(--colorTerciario);
+  color: var(--colorTerciario);
 }
 
 body {
-  background-color: --var(--colorPrincipal);
+  background-color: var(--colorPrincipal);
 }
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
@@ -1117,4 +1117,29 @@ ul.nav_vertical li {
 .offset-by-ten.column,
 .offset-by-ten.columns {
   margin-left: 100%;
+}
+
+.btn-color1 {
+  color: lightcoral;
+  border: 1px solid black;
+}
+
+.btn-color2 {
+  color: lightblue;
+  border: 1px solid black;
+}
+
+.btn-color3 {
+  color: lightyellow;
+  border: 1px solid black;
+}
+
+.btn-color4 {
+  color: lightpink;
+  border: 1px solid black;
+}
+
+.btn-color5 {
+  color: lightgreen;
+  border: 1px solid black;
 }

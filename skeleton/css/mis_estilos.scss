@@ -4,4 +4,7 @@
 @use '_variables';
 @use 'navBar';
 @use '_tencol';
+@use '_botones';
+
+@include botones.generarBotones();
 
