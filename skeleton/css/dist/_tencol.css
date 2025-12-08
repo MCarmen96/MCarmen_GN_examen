@@ -1,0 +1,99 @@
+.one.column,
+.one.columns {
+  width: 10%;
+}
+
+.offset-by-one.column,
+.offset-by-one.columns {
+  margin-left: 10%;
+}
+
+.two.column,
+.two.columns {
+  width: 20%;
+}
+
+.offset-by-two.column,
+.offset-by-two.columns {
+  margin-left: 20%;
+}
+
+.three.column,
+.three.columns {
+  width: 30%;
+}
+
+.offset-by-three.column,
+.offset-by-three.columns {
+  margin-left: 30%;
+}
+
+.four.column,
+.four.columns {
+  width: 40%;
+}
+
+.offset-by-four.column,
+.offset-by-four.columns {
+  margin-left: 40%;
+}
+
+.five.column,
+.five.columns {
+  width: 50%;
+}
+
+.offset-by-five.column,
+.offset-by-five.columns {
+  margin-left: 50%;
+}
+
+.six.column,
+.six.columns {
+  width: 60%;
+}
+
+.offset-by-six.column,
+.offset-by-six.columns {
+  margin-left: 60%;
+}
+
+.seven.column,
+.seven.columns {
+  width: 70%;
+}
+
+.offset-by-seven.column,
+.offset-by-seven.columns {
+  margin-left: 70%;
+}
+
+.eight.column,
+.eight.columns {
+  width: 80%;
+}
+
+.offset-by-eight.column,
+.offset-by-eight.columns {
+  margin-left: 80%;
+}
+
+.nine.column,
+.nine.columns {
+  width: 90%;
+}
+
+.offset-by-nine.column,
+.offset-by-nine.columns {
+  margin-left: 90%;
+}
+
+.ten.column,
+.ten.columns {
+  width: 100%;
+}
+
+.offset-by-ten.column,
+.offset-by-ten.columns {
+  margin-left: 100%;
+}

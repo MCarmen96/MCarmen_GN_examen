@@ -1,0 +1,7 @@
+a {
+  color: var(--colorTerciario);
+}
+
+body {
+  background-color: var(--colorPrincipal);
+}
