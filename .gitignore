@@ -416,3 +416,88 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+## Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+## macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+## Linux/Unix
+*~
+.#*
+.fuse_hidden*
+
+---
+# 🔨 Archivos de Compilación / Binarios
+
+## General
+*.o
+*.a
+*.lib
+*.so
+*.dll
+*.class
+*.exe
+*.obj
+*.out
+*.elf
+*.pdb
+
+## Java
+/bin/
+/target/
+.classpath
+.project
+.settings/
+
+## Node.js
+/node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp/
+.pnp.js
+
+## Python
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+.venv/
+venv/
+env/
+
+---
+# 📄 Archivos de Logs, Datos y Temporales
+
+/log/
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+## Datos
+*.sqlite
+/data/*.sqlite3
+
+---
+#  IDEs y Editores
+
+## VS Code
+.vscode/
+
+## IntelliJ / JetBrains
+.idea/
+*.iws
+*.iml
+*.ipr
+
+## Vim
+.vimrc.local
