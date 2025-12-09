@@ -5,6 +5,7 @@
 @use 'navBar';
 @use '_tencol';
 @use '_botones';
+@use '_galeria';
 
 @include botones.generarBotones();
 
