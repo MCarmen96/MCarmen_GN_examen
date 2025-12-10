@@ -1,0 +1,21 @@
+@use '_mixins' as *;
+
+@media (min-width:550px){
+    .container-fluid{
+        width: 100%;
+    }
+    
+    @include generar-columnas('sm');
+
+}
+
+@media (min-with:768px){ 
+    @include generar-columnas('md');
+}
+
+@media (min-with:992px){
+
+    @include generar-columnas('lg')
+
+}
+

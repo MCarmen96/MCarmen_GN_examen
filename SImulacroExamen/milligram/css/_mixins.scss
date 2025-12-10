@@ -1,4 +1,3 @@
-
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -10,7 +9,7 @@ $breakpoints: (
     lg: 992px
 );
 
-/*GENERADOR BASE*/
+
 @mixin generar-columnas($var:""){
     @for $i from 1 through 12{
         .col#{$var}-#{$i}{
@@ -19,9 +18,8 @@ $breakpoints: (
         }
     }
 }
-@include generar-columnas();//para movil xs por defecto como en boostrap primero
+@include generar-columnas();
 
-/*movil,table y escritorio*/
 
 @each $nombre,$valor in $breakpoints{
     @media(min-width:#{$valor}){
