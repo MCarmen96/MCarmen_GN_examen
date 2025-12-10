@@ -1,0 +1,28 @@
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0;
+}
+$breakpoints: (
+    sm: 576px,
+    md: 768px,
+    lg: 992px
+);
+
+
+@mixin generar-columnas($var:""){
+    @for $i from 1 through 12{
+        .col#{$var}-#{$i}{
+            flex:0 0 calc(100%/12 * #{$i});
+            max-width: calc(100%/12 *#{$i});
+        }
+    }
+}
+@include generar-columnas();
+
+
+@each $nombre,$valor in $breakpoints{
+    @media(min-width:#{$valor}){
+        @include generar-columnas("-#{$nombre}");
+    }
+}
