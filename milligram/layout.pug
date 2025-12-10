@@ -4,6 +4,26 @@
     include cabecera
 </head>
 <body>
+        nav#main-nav
+    .container
+        .row.menu-container
+        .col-6
+            a.logo(href="#") Mi Web
+        .col-6.row.row-end
+            .hamburger(onclick="toggleMenu()")
+            span
+            span
+            span
+
+        .row
+        .col-12.menu-links
+            a(href="#") Inicio
+            a(href="#") Servicios
+            a(href="#") Contacto
+
+
+
+
     .container 
         .row 
             .col-12
@@ -48,5 +68,19 @@
                     img(src="../img/lucky.jpeg", alt="")  
                     img(src="../img/lucky.jpeg", alt="")  
                     img(src="../img/lucky.jpeg", alt="")  
+        .row 
+            .col-12 
+                <div class="carrusel lateral"  style="--numeroImagenes: 8; --tiempo:10s;">
+                    <div>
+                        img(src="../img/lucky.jpeg", alt="")    
+                        img(src="../img/prueba2.png", alt="")
+                        img(src="../img/lucky.jpeg", alt="")    
+                        img(src="../img/prueba2.png", alt="")
+                        img(src="../img/lucky.jpeg", alt="")    
+                        img(src="../img/prueba2.png", alt="")
+                        img(src="../img/lucky.jpeg", alt="")    
+                        img(src="../img/prueba2.png", alt="")
+                    </div>
+            </div>       
 </body>
 </html>

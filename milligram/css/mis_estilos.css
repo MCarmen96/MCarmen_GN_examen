@@ -850,14 +850,148 @@ img {
   }
 }
 /*
+    flex: 0 0 calc(100% / 12 * X);
+    Esa propiedad equivale a escribir:
+    flex-grow: 0; QUE NO CREZCA AUNQUE HAYA ESPACIO
+    flex-shrink: 0; QUE NO SE HAGA MAS PEQUEÑO AUQNUE HAYA ESPACIO
+    flex-basis: calc(100% / 12 * X); TAMAÑO QUE VA OCUPAR
+
+        Extra pequeño,Ninguno,<576px,Móviles (Vertical/Horizontal)
+        Pequeño,sm,≥576px,Móviles (Horizontal) y algunas Phablets
+        Medio,md,≥768px,Tabletas (Vertical/Horizontal)
+        Grande,lg,≥992px,Portátiles y Escritorio pequeño
+        Extra grande,xl,≥1200px,Escritorio estándar
+        Extra extra grande,xxl,≥1400px,Escritorio grande y Monitores 4K
 
 
-flex: 0 0 calc(100% / 12 * X);
-Esa propiedad equivale a escribir:
-flex-grow: 0; QUE NO CREZCA AUNQUE HAYA ESPACIO
-flex-shrink: 0; QUE NO SE HAGA MAS PEQUEÑO AUQNUE HAYA ESPACIO
-flex-basis: calc(100% / 12 * X); TAMAÑO QUE VA OCUPAR
 
 
+*/
+nav {
+  background: #9b4dca;
+  padding: 1rem;
+}
+nav .menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .menu-links {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+}
+nav .menu-links a {
+  color: white;
+  text-decoration: none;
+}
+nav .hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+nav .hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: white;
+}
+nav.open .menu-links {
+  display: flex;
+}
 
-*//*# sourceMappingURL=mis_estilos.css.map */
+/* -----------------------------------------
+    MENÚ EN TABLET Y ESCRITORIO
+    USANDO TU MISMO MAPA DE BREAKPOINTS
+    (md = 768px → tablet)
+------------------------------------------ */
+@media (min-width: 768px) {
+  nav .menu-links {
+    display: flex;
+    flex-direction: row;
+  }
+  nav .hamburger {
+    display: none;
+  }
+}
+.carrusel {
+  overflow: hidden;
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.carrusel div {
+  display: flex;
+  position: absolute;
+  animation: pasarela calc(var(--tiempo) * var(--numeroImagenes)) infinite;
+  animation-timing-function: steps(var(--numeroImagenes));
+  width: calc(400px * var(--numeroImagenes));
+}
+
+.carrusel div img {
+  width: 400px;
+  height: 400px;
+  animation: lateral var(--tiempo) ease-in-out infinite forwards;
+  opacity: 0;
+}
+
+.carrusel.lateral div img {
+  width: 400px;
+  height: 400px;
+  animation: lateral var(--tiempo) ease-in-out infinite forwards;
+  opacity: 0;
+}
+
+.carrusel.arriba div img {
+  width: 400px;
+  height: 400px;
+  animation: arriba var(--tiempo) ease-in-out infinite forwards;
+  opacity: 0;
+}
+
+@keyframes pasarela {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-400px * var(--numeroImagenes)));
+  }
+}
+@keyframes lateral {
+  0% {
+    transform: translateX(100%) scale(0.8);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  90% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%) scale(0.8);
+    opacity: 0;
+  }
+}
+@keyframes arriba {
+  0% {
+    transform: translateY(-100%) scale(0.8);
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  90% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%) scale(0.8);
+    opacity: 0;
+  }
+}/*# sourceMappingURL=mis_estilos.css.map */

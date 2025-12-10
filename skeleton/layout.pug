@@ -3,7 +3,9 @@
 <head>
     include cabecera
 </head>
-<body>
+<body class="tema claro">
+    button CLARO 
+    button OSCURO
     .container 
         .row 
         .twelve.columns
@@ -40,13 +42,19 @@
                 img(src="../img/prueba2.png", alt="") 
                 img(src="../img/prueba2.png", alt="") 
                 img(src="../img/prueba2.png", alt="") 
+
         .row 
-            h2 GALERIA CON FLOAT 
-                .galeria-float-5 
-                    img(src="../img/lucky.jpeg", alt="")  
-                    img(src="../img/lucky.jpeg", alt="")  
-                    img(src="../img/lucky.jpeg", alt="")  
-                    img(src="../img/lucky.jpeg", alt="")  
-                    img(src="../img/lucky.jpeg", alt="")  
+            .six.columns
+                .acordeon
+                    div
+                        h3 Acordeon
+                            span + 
+                        article Este texto esta oculto hasta que haces click
+                        h3 Acordeon
+                            span + 
+                        article Este texto esta oculto hasta que haces click
+
+    <script type="text/javascript" src="../js/cambioTema.js"></script>
 </body>
+    
 </html>
