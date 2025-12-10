@@ -1,5 +1,4 @@
-.row-4-8 {
+.row-col {
   display: flex;
-  flex-wrap: wrap;
-  margin-left: 0;
+  flex-direction: column;
 }
